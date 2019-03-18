@@ -1,0 +1,32 @@
+{
+  "author": "afairhurst",
+  "homepage": "https://github.com/KD0NKS/ci-sandbox#readme",
+  "license": "Unlicense",
+  "name": "ci-sandbox",
+  "description": "sandbox for testing ci/cd stuff",
+  "version": "0.0.1",
+  "main": "./dist/src/index.js",
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KD0NKS/ci-sandbox.git"
+  },
+  "scripts": {
+    "tsc": "./node_modules/.bin/tsc",
+    "build": "tsc",
+    "test": "npm run build && nyc --reporter=text --reporter=lcov mocha dist/test/**/*.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/KD0NKS/ci-sandbox/issues"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "typescript": "^3.3.3333"
+  }
+}
