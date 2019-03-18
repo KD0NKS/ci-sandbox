@@ -16,7 +16,7 @@
   "scripts": {
     "tsc": "./node_modules/.bin/tsc",
     "build": "tsc",
-    "test": "npm run build && nyc --reporter=text --reporter=lcov mocha dist/test/**/*.test.js"
+    "test": "mocha --exit"
   },
   "bugs": {
     "url": "https://github.com/KD0NKS/ci-sandbox/issues"
