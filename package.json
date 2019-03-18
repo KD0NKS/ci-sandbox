@@ -17,8 +17,8 @@
   "scripts": {
     "build": "tsc",
     "setup": "npm install",
-    "test": "npm run build && npm run test-only",
-    "test-only": "mocha dist/test/**/*.test.js",
+    "test": "npm run build && nyc --reporter=text --reporter=lcov mocha dist/test/**/*.test.js",
+    "test-only": "nyc --reporter=text --reporter=lcov mocha dist/test/**/*.test.js",
     "tsc": "./node_modules/.bin/tsc"
   },
   "bugs": {
@@ -30,6 +30,7 @@
     "@types/node": "^11.11.3",
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
     "typescript": "^3.3.3333"
   }
 }
