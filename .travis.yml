@@ -3,4 +3,9 @@ node_js:
 - "stable"
 cache:
     directories:
-    - "$HOME/.npm"
+    - "node_modules"
+before_script:
+- npm run setup
+- npm run build
+script:
+- npm run test

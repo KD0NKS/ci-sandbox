@@ -5,7 +5,8 @@
   "name": "ci-sandbox",
   "description": "sandbox for testing ci/cd stuff",
   "version": "0.0.1",
-  "main": "./dist/src/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/"
   ],
@@ -14,9 +15,11 @@
     "url": "git+https://github.com/KD0NKS/ci-sandbox.git"
   },
   "scripts": {
-    "tsc": "./node_modules/.bin/tsc",
     "build": "tsc",
-    "test": "mocha --exit"
+    "setup": "npm install",
+    "test": "npm run build && npm run test-only",
+    "test-only": "mocha dist/test/**/*.test.js",
+    "tsc": "./node_modules/.bin/tsc"
   },
   "bugs": {
     "url": "https://github.com/KD0NKS/ci-sandbox/issues"
