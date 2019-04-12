@@ -1,6 +1,5 @@
-import Greeter from '../src/Greeter'
-
-const assert = require('assert');
+import { Greeter } from '../src/Greeter'
+import assert from 'assert';
 
 describe('Test for greeter class', () => {
     it('Should return "Hello World!"', () => {
