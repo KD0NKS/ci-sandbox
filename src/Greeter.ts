@@ -1,7 +1,7 @@
-export default class Greeter {
+export class Greeter {
     constructor() { }
 
-    greet(): string {
+    public greet(): string {
         return "Hello World!"
     }
 }
