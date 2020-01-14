@@ -33,7 +33,7 @@
     "url": "https://github.com/KD0NKS/ci-sandbox/issues"
   },
   "devDependencies": {
-    "@istanbuljs/nyc-config-typescript": "^1.0.0",
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.4",
     "@types/mocha": "^5.2.7",
     "@types/node": "^13.1.6",
