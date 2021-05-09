@@ -9,19 +9,18 @@
         "allowJs": false,
         "preserveConstEnums": true,
         "outDir": "dist",
-        "declaration": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "declaration": true
     },
     "include": [
         "index.ts",
-        "src/**/*",
-        "test/**/*"
+        "src/**/*"
     ],
     "exclude": [
+        ".nyc_output",
         "bin",
         "coverage",
-        "node_modules",
         "dist",
-        ".nyc_output"
+        "node_modules"
     ]
 }

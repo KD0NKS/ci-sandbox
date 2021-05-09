@@ -1,5 +1,7 @@
+import * as chai from 'chai'
 import { Greeter } from '../src/Greeter'
-import assert from 'assert';
+
+const assert = chai.assert
 
 describe('Test for greeter class', () => {
     it('Should return "Hello World!"', () => {
